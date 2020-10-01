@@ -1,0 +1,206 @@
+// .Node {
+//     box-sizing: border-box;
+//     position: absolute;
+//     transition: all ease-in-out 0.2s;
+//     background-color: #eee;
+//     border: 1px solid lightgrey;
+//     border-radius: 5px;
+//     transform: translate(-50%, -50%);
+//     box-shadow: 4px 4px 10px lightgrey;
+//     &.focused {
+//       box-shadow: 0px 0px 12px steelblue;
+//     }
+//     .imgWrapper {
+//       float: left;
+//       border-radius: 3px;
+//       overflow: hidden;
+//       position: relative;
+//       display: flex;
+//       cursor: pointer;
+//       .defaultImgMessage {
+//         position: absolute;
+//         top: -4px;
+//         left: 16px;
+//         font-size: 50px;
+//         opacity: 0.3;
+//         font-style: italic;
+//         white-space: nowrap;
+//         color: gray;
+//       }
+//       img {
+//         object-fit: cover;
+//         object-position: top;
+//         z-index: 1;
+//         width: 100%;
+//         font-size: 12px; //for alt text
+//       }
+//       .imgMore {
+//         position: absolute;
+//         right: 2px;
+//         bottom: 2px;
+//         background-color: rgba(0, 0, 0, 0.5);
+//         color: white;
+//         border-radius: 15px;
+//         font-size: 10px;
+//         line-height: 1;
+//         padding: 2px 4px 3px;
+//         cursor: pointer;
+//         z-index: 1;
+//       }
+//     }
+//     .content {
+//       float: left;
+//       padding-left: 4px;
+//       position: relative;
+//       .four-line-clamp {
+//         display: -webkit-box;
+//         -webkit-box-orient: vertical;
+//         -webkit-line-clamp: 4;
+//         line-height: 15px;
+//         overflow: hidden;
+//         max-height: 62px; //line h * 4 + 2?
+//       }
+//       .label {
+//         @media print {
+//           color: gray;
+//         }
+//         display: inline;
+//         border: 0;
+//         padding: 0;
+//         font-size: 13px;
+//         line-height: 15px;
+//         font-weight: bold;
+//         vertical-align: top;
+//         &:focus {
+//           outline: none;
+//           border: 0;
+//           box-shadow: none;
+//           text-decoration: underline;
+//         }
+//       }
+//       .description {
+//         display: inline;
+//         font-size: 12px;
+//         line-height: 15px;
+//         color: #666;
+//       }
+//       .dates {
+//         margin-top: 3px;
+//         font-size: 10px;
+//         color: #666;
+//         white-space: nowrap;
+//         overflow: hidden;
+//         text-overflow: ellipsis;
+//       }
+//     }
+  
+//     .downPropLabel,
+//     .upPropLabel {
+//       position: absolute;
+//       left: 50%;
+//       span {
+//         padding-bottom: 3px;
+//         font-size: 14px;
+//         color: gray;
+//         position: absolute;
+//         white-space: nowrap;
+//         transform: translate(-50%, -50%);
+//       }
+//     }
+//     .counter {
+//       padding: 3px;
+//       font-size: 12px;
+//       font-weight: bold;
+//       position: absolute;
+//       //background-color: red;
+//       line-height: 1;
+//       @media print {
+//         color: gray;
+//       }
+//       &:hover {
+//         text-decoration: none;
+//       }
+//       &:focus {
+//         text-decoration: underline;
+//         box-shadow: none;
+//       }
+//       .chevron {
+//         stroke-width: 2;
+//         font-size: 16px;
+//         @media print {
+//           display: none;
+//         }
+//       }
+//       transition: all;
+//     }
+//     .siblingCount {
+//       right: 100%;
+//     }
+//     .spouseCount {
+//       left: 100%;
+//     }
+//     .siblingCount,
+//     .spouseCount {
+//       top: 50%;
+//       transform: translateY(-50%);
+//     }
+//     .parentCount,
+//     .childrenCount {
+//       left: 50%;
+//       transform: translateX(-50%);
+//       .value {
+//         display: inline-block;
+//         min-width: 1em; //default to optional icon width for central alignment
+//       }
+//     }
+//     .parentCount {
+//       bottom: 100%;
+//     }
+//     .childrenCount {
+//       top: 100%;
+//     }
+//     &.female {
+//       .showGenderColor & {
+//         background-color: #ffcccc;
+//       }
+//     }
+//     &.male {
+//       .showGenderColor & {
+//         background-color: #ccd9ff;
+//       }
+//     }
+//     &.thirdgender {
+//       .showGenderColor & {
+//         //background-color: rgba(238, 130, 238, 0.11);
+//       }
+//     }
+//   }
+  
+//   .DetailsModal {
+//     .allImages {
+//       width: 100%;
+//       margin-bottom: 8px;
+//       overflow: hidden;
+//       height: 164px;
+//       img {
+//         height: 100%;
+//         float: left;
+//         margin-right: 4px;
+//         margin-bottom: 4px;
+//         max-width: 100%;
+//       }
+//     }
+//     .externalLinks {
+//       a {
+//         padding: 1px;
+//         margin-right: 10px;
+//         display: inline-block;
+//         line-height: 1;
+//         img {
+//           vertical-align: middle;
+//           width: 32px;
+//         }
+//       }
+//     }
+//   }
+  
