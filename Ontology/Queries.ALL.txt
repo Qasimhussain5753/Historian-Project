@@ -1,0 +1,18 @@
+select ?person ?personLabel ?gender ?genderLabel
+?DOD ?DOB ?POB ?POBLabel ?mother ?motherLabel
+?father ?fatherLabel ?spouse ?spouseLabel 
+?relatives ?relativesLabel  ?sibling ?siblingLabel
+where{
+?person wdt:P106 wd:Q82955.
+?person wdt:P27 wd:Q843.
+?person wdt:P21 ?gender.
+OPTIONAL {?person wdt:P570 ?DOD.}
+OPTIONAL {?person wdt:P569 ?DOB.}
+OPTIONAL {?person wdt:P19  ?POB.}
+OPTIONAL {?person wdt:P25 ?mother.}
+optional {?person wdt:P22 ?father.}
+optional {?person wdt:P26 ?spouse.}
+optional {?person wdt:P1038 ?relatives.}
+optional {?person wdt:P3373 ?siblings.}
+SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". } 
+}
